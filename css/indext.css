@@ -73,8 +73,9 @@ a {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: 1320px;
   margin: auto;
+  padding: 0px 12px;
 }
 
 .unliststyle {
@@ -83,6 +84,10 @@ a {
 
 .fwb {
   font-weight: bold;
+}
+
+.mw100 {
+  max-width: 100%;
 }
 
 
@@ -94,12 +99,12 @@ a {
 
 
 .nav-img {
-  max-width: 86px;
+  max-width: 20%;
   margin: 5px 0px;
 }
 
 .nav-ul {
-  width: 526px;
+  width: 40%;
 }
 
 
@@ -110,7 +115,7 @@ a {
 
 .page-box {
   padding: 96px 0px 80px 0px;
-  max-width: 856px;
+  max-width: 66%;
 }
 
 .page-h1 {
@@ -145,20 +150,23 @@ a {
 }
 
 .footer-ul {
-  width: 526px;
+  width: 45%;
 }
 
 .footer-img {
-  width: 196px;
+  width: 20%;
 }
 
 .footer-img img {
-  max-width: 48px;
+  width: 50%;
 }
 
-.footer-tel-img,
-.footer-email-img {
-  width: 60px;
+.footer-img a {
+  text-align: right;
+}
+
+.footer-img-a {
+  width: 5%;
   margin-right: 10px;
 }
 
@@ -167,16 +175,12 @@ a {
   font-size: 36px;
 }
 
-.footer-email {
-  margin-bottom: 32px;
-}
-
 .policy-box {
   padding: 32px 0px;
 }
 
 .footer-policy {
-  width: 196px;
+  width: 15%;
 }
 
 
@@ -184,6 +188,29 @@ a {
 
 
 /*----- R W D -----*/
+
+
+
+
+
+@media ( max-width: 768px) {
+  .nav-ul {
+    width: 75%;
+  }
+  
+  .page-box {
+    max-width: 100%;
+    padding: 80px 0px;
+  }
+
+  .footer-ul {
+    width: 60%;
+  }
+
+  .footer-img img {
+    width: 70%;
+  }
+}
 
 
 
@@ -199,8 +226,10 @@ a {
   }
 
   .nav-ul {
-    width: 100%;
+    width: calc(100% + 24px);
     flex-wrap: wrap;
+
+    margin-left: -12px;
   }
 
   .nav-sm-li {
@@ -218,8 +247,6 @@ a {
 
   .page-box {
     padding: 40px 0px 64px 0px;
-    max-width: 372px;
-    margin: auto;
   }
 
   .page-h1 {
@@ -244,6 +271,9 @@ a {
   .footer-tel,
   .footer-email {
     font-size: 16px;
+  }
+
+  .pt24-sm {
     padding-top: 24px;
   }
 
@@ -254,12 +284,18 @@ a {
     padding-top: 20px;
   }
 
-  .footer-img img{
-    width: 30px;
+  .footer-img {
+    width: 100%;
+  }
+
+  .footer-img-a {
+    width: 10%;
+    margin-right: 10px;
   }
 
   .footer-box {
-    width: 130px;
+    width: 30%;
+    justify-content: flex-end;
     float: right;
     padding-top: 24px;
   }
@@ -277,21 +313,8 @@ a {
   .policy-box p {
     padding-bottom: 8px;
   }
-}
 
-
-
-@media ( max-width: 768px) {
-  .container {
-    max-width: 720px;
-    margin: auto;
-  }
-
-  .page-box {
-    padding: 80px 0px;
-  }
-
-  .footer-ul {
-    width: 60%;
+  .footer-policy {
+   width: 100%;
   }
 }
